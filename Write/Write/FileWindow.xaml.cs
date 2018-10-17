@@ -36,7 +36,7 @@ namespace Write
             this.text = text;
             control = new RichTextBoxPrintCtrl();
             Save();
-            DocumentViewer.Navigate(Environment.CurrentDirectory + "\\Documentation\\index.html");
+            DocumentViewer.Navigate(Environment.CurrentDirectory + "\\index.html");
         }
 
         private void FileWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)

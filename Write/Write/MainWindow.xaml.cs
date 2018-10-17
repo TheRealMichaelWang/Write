@@ -42,7 +42,7 @@ namespace Write
         private void DictionaryInput_LostFocus(object sender, RoutedEventArgs e)
         {
             if(checker.language != (string)DictionaryInput.SelectedValue)
-            checker = new SpellChecker("Dictionary/"+(string)DictionaryInput.SelectedValue);
+            checker = new SpellChecker((string)DictionaryInput.SelectedValue);
         }
 
         public void InitializeSpell()
@@ -52,7 +52,7 @@ namespace Write
             DictionaryInput.Items.Add("english(extreme)");
             DictionaryInput.Items.Add("spanish");
             DictionaryInput.SelectedValue = "english";
-            checker = new SpellChecker("Dictionary/english");
+            checker = new SpellChecker("english");
             SpellCheckOutput.VerticalScrollBarVisibility = ScrollBarVisibility.Visible;
         }
         private void Text_SelectionChanged(object sender, RoutedEventArgs e)
