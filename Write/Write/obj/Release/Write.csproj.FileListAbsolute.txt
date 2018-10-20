@@ -5,7 +5,6 @@ C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\obj\Release\F
 C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\obj\Release\MainWindow.g.cs
 C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\obj\Release\StartupControllerWindow.g.cs
 C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\obj\Release\App.g.cs
-C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\obj\Release\Write_Content.g.cs
 C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\obj\Release\Write_MarkupCompile.cache
 C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\obj\Release\Write_MarkupCompile.lref
 C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\obj\Release\FileWindow.baml

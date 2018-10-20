@@ -48,33 +48,41 @@ namespace Write
                 currentword.value = value;
             }
         }
-        public Word Search(string key, Word currentword)
+        public void Add(string value,string meaning)
         {
-            if(currentword == null)
+            Word currentword = Head;
+            Word previous = null;
+            while (currentword != null && currentword.value != null)
             {
-                return null;
-            }
-            if (key.Length>=currentword.value.Length)
-            {
-                var a = Search(key, currentword.right);
-                if(a != null)
+                if (value.Length >= currentword.value.Length)
                 {
-                    return a;
+                    previous = currentword;
+                    currentword = currentword.right;
+                }
+                else
+                {
+                    previous = currentword;
+                    currentword = currentword.left;
+                }
+            }
+            if (previous != null)
+            {
+                if (value.Length >= previous.value.Length)
+                {
+                    previous.right = new Word(value);
+                    previous.right.meaning = meaning;
+                }
+                else
+                {
+                    previous.left = new Word(value);
+                    previous.left.meaning = meaning;
                 }
             }
             else
             {
-                var a = Search(key, currentword.left);
-                if(a != null)
-                {
-                    return a;
-                }
+                currentword.value = value;
+                currentword.meaning = meaning;
             }
-            if(key == currentword.value)
-            {
-                return currentword;
-            }
-            return null;
         }
         public Word Search(string key)
         {

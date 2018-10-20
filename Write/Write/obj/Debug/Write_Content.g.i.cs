@@ -11,6 +11,5 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/documentation/file.html")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/documentation/index.html")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/documentation/printing.html")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/documentation/spell.html")]
 
 

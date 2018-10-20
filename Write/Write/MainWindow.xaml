@@ -33,6 +33,12 @@
                     <Button x:Name="AddToDictionary" Content="AddToDictionary" HorizontalAlignment="Left" VerticalAlignment="Top" Width="127" Click="AddToDictionary_Click" Margin="232,0,0,0" HorizontalContentAlignment="Center"/>
                 </Grid>
             </TabItem>
+            <TabItem x:Name="VocablularyTab" Header="Vocabulary">
+                <Grid x:Name="VocabularyGrid">
+                    <Button x:Name="DoVocabularyButton" Content="DoVocab" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="DoVocab" Margin="1,2,0,0"/>
+                    <ComboBox x:Name="VocabBookSelection" Margin="81,0,397.8,34.8" SelectionChanged="VocabBookSelection_SelectionChanged"/>
+                </Grid>
+            </TabItem>
         </TabControl>
     </Grid>
 </Window>

@@ -22,6 +22,7 @@ namespace Write
     public partial class MainWindow : Window
     {
         SpellChecker checker;
+        Vocabulary vocab;
         public FileInfo document;
         public MainWindow()
         {
@@ -114,6 +115,13 @@ namespace Write
             {
                 Text.SetValue(Paragraph.TextAlignmentProperty, AlignmentInput.SelectedValue);
             }
+        }
+        public void InitializeVocab()
+        {
+            vocab = new Vocabulary("bio7");
+            VocabBookSelection.Items.Add("bio7");
+            VocabBookSelection.Items.Add("CalloftheWild");
+            VocabBookSelection.SelectedValue = "bio7";
         }
         public void InitializeFont()
         {
@@ -396,6 +404,18 @@ namespace Write
                     Text.Selection.Text = File.ReadAllText(document.FullName);
                 }
             }
+        }
+
+        private void DoVocab(object sender, RoutedEventArgs e)
+        {
+            TextRange range = new TextRange(Text.Document.ContentStart, Text.Document.ContentEnd);
+            string[] lines = range.Text.Split("\n".ToCharArray());
+            range.Text = vocab.DefineAll(lines);
+        }
+        
+        private void VocabBookSelection_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            vocab = new Vocabulary((string)VocabBookSelection.SelectedItem);
         }
     }
     }
