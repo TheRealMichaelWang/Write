@@ -1,2 +1,2 @@
 # Write
-A word processing program for rich text files.
+A Free word processing program for rich text files, that can also do your vocabulary homework.
