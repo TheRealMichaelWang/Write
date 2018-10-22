@@ -23,17 +23,21 @@ namespace Write
     {
         public RichTextBoxPrintCtrl control;
         public FileInfo document;
+        PageControl pagecontrol;
         System.Windows.Controls.RichTextBox text;
+        string[] settings;
         public FileWindow(FileInfo doc, System.Windows.Controls.RichTextBox text)
         {
             InitializeComponent();
             document = null;
+            settings = File.ReadAllLines(Environment.CurrentDirectory + "\\settings.dat");
             this.WindowState = WindowState.Maximized;
             this.Closing += FileWindow_Closing;
             GetInfo();
             OpenOutput.Text = "Open A File";
             document = doc;
             this.text = text;
+            pagecontrol = new PageControl(settings[0]);
             control = new RichTextBoxPrintCtrl();
             Save();
             DocumentViewer.Navigate(Environment.CurrentDirectory + "\\index.html");
@@ -67,7 +71,7 @@ namespace Write
                     "\r\nLast Modified: "+document.LastWriteTime+"\r\nLastOpened: "+document.LastAccessTime+"\r\nSize: "
                     +document.Length+"\r\nCreationTime: "+document.CreationTime;
             }
-            Information.Text += "\r\nClose this dialog to return";
+            Information.Text += "\r\nClose this dialog to return"+ "\r\nThis Product is licensed to: " + settings[1];
         }
         public void Open()
         {
@@ -116,14 +120,19 @@ namespace Write
             System.Windows.Forms.PrintDialog dialog = new System.Windows.Forms.PrintDialog();
             if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                if (dialog.PrinterSettings.PrintToFile == false)
+                pagecontrol = new PageControl(settings[0]);
+                if (pagecontrol.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    control.PrintDocument(dialog.PrinterSettings, text);
-                    this.Close();
+                    if (dialog.PrinterSettings.PrintToFile == false)
+                    {
+                        control.PrintDocument(dialog.PrinterSettings, text);
+                        File.AppendAllText(Environment.CurrentDirectory + "\\Output",pagecontrol.output);
+                        this.Close();
+                    }
                 }
                 else
                 {
-
+                    System.Windows.Forms.MessageBox.Show("Printing was canceled");
                 }
             }
             else

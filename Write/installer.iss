@@ -4,7 +4,7 @@
 #define MyAppName "Write"
 #define MyAppVersion "1.0"
 #define MyAppPublisher "Michael Wang"
-#define MyAppURL "http://michaelssite.dx.am/files/write"
+#define MyAppURL "http://michaelwangsssite.dx.am/files/write"
 #define MyAppExeName "Write.exe"
 
 [Setup]
@@ -45,7 +45,13 @@ Source: "C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\bin\
 Source: "C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\bin\Release\printing.html"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\bin\Release\spanish.dic"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\bin\Release\spell.html"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\bin\Release\start.bmp"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\bin\Release\start.bmp"; DestDir: "{app}"; Flags: ignoreversion 
+Source: "C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\bin\Release\bio7.dic"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\bin\Release\CalloftheWild.dic"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\bin\Release\vocab.html"; DestDir: "{app}"; Flags: ignoreversion
+
+
+
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]

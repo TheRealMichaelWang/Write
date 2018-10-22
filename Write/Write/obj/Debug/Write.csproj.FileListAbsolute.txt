@@ -16,3 +16,4 @@ C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\obj\Debug\Fil
 C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\obj\Debug\StartupControllerWindow.g.cs
 C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\obj\Debug\StartupControllerWindow.baml
 C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\obj\Debug\Write.csprojResolveAssemblyReference.cache
+C:\Users\Michael\documents\visual studio 2015\Projects\Write\Write\obj\Debug\Write.PageControl.resources
