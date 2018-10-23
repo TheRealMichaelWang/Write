@@ -121,7 +121,7 @@ namespace ConfigureWrite
 
         private void Website_Click(object sender, EventArgs e)
         {
-
+            Process.Start("https://michaelwangssite/files/write");
         }
     }
 }
