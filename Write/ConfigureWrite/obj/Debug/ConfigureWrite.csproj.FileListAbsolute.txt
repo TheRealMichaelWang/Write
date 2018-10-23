@@ -1,0 +1,9 @@
+C:\Users\Michael\documents\visual studio 2015\Projects\Write\ConfigureWrite\bin\Debug\ConfigureWrite.exe.config
+C:\Users\Michael\documents\visual studio 2015\Projects\Write\ConfigureWrite\obj\Debug\ConfigureWrite.csprojResolveAssemblyReference.cache
+C:\Users\Michael\documents\visual studio 2015\Projects\Write\ConfigureWrite\obj\Debug\ConfigureWrite.Main.resources
+C:\Users\Michael\documents\visual studio 2015\Projects\Write\ConfigureWrite\obj\Debug\ConfigureWrite.Properties.Resources.resources
+C:\Users\Michael\documents\visual studio 2015\Projects\Write\ConfigureWrite\obj\Debug\ConfigureWrite.csproj.GenerateResource.Cache
+C:\Users\Michael\documents\visual studio 2015\Projects\Write\ConfigureWrite\bin\Debug\ConfigureWrite.exe
+C:\Users\Michael\documents\visual studio 2015\Projects\Write\ConfigureWrite\bin\Debug\ConfigureWrite.pdb
+C:\Users\Michael\documents\visual studio 2015\Projects\Write\ConfigureWrite\obj\Debug\ConfigureWrite.exe
+C:\Users\Michael\documents\visual studio 2015\Projects\Write\ConfigureWrite\obj\Debug\ConfigureWrite.pdb

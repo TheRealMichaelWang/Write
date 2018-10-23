@@ -49,6 +49,8 @@ Source: "C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\bin\
 Source: "C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\bin\Release\bio7.dic"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\bin\Release\CalloftheWild.dic"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\bin\Release\vocab.html"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\bin\Release\settings.dat"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Michael\Documents\Visual Studio 2015\Projects\Write\Write\bin\Release\output.dat"; DestDir: "{app}"; Flags: ignoreversion
 
 
 
