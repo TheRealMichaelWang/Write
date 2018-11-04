@@ -1,1 +1,1 @@
-
+Welcom to Write Console"Were so happy to see you today! There are a few things we'd like to tell you. We'd also like to remind you to update Write (Type 'update' to update)." "Write Update"-Start Messages added"-Component Manager added"-Fixed insert error" "(C) Michael Wang 2018
