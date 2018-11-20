@@ -1,6 +1,0 @@
-Write
-person,Type|person|,Name|Michael Wang|,Contribution|Lead Developer|,
-task,Type|task|,TaskName|Complete Write Re-build for the thanksgving update|,Dispatcher|Michael Wang|,Progress|90|,DueDate|11/22/2018|,
-task,Type|task|,TaskName|Test Write|,Dispatcher|Michael Wang|,Progress|50|,DueDate|11/22/2018|,
-file,Type|file|,FilePath|https://raw.githubusercontent.com/TheRealMichaelWang/Write/master/Write.exe|,
-file,Type|file|,FilePath|https://raw.githubusercontent.com/TheRealMichaelWang/Write/master/PowerProject.exe|,
